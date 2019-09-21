@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <img src="../../assets/images\EduTalk-Logo.png"   width="350"><hr><br>
+ 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-app>
+    <!--<ion-router-outlet></ion-router-outlet>-->
+  <ion-split-pane>
+    <ion-menu menuId="avocadoMenu" side="center" type="overlay">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title  color="primary" >Home</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+            
+          <ion-item [routerLink]="['/main']">
+            <ion-label> Profile</ion-label>
+            
+            <ion-icon ></ion-icon>
+           </ion-item>
+  
+           <ion-item [routerLink]="['/main']">
+            <ion-label> Chat</ion-label>
+            
+            <ion-icon ></ion-icon>
+           </ion-item>
+        
+           <ion-item [routerLink]="['/main']">
+            <ion-label> Notice Board</ion-label>
+            
+            <ion-icon ></ion-icon>
+           </ion-item>
+        
+           <ion-item [routerLink]="['/main']">
+            <ion-label> Progress Report</ion-label>
+            
+            <ion-icon ></ion-icon>
+           </ion-item>
+        
+           <ion-item [routerLink]="['/main']">
+            <ion-label> Resources</ion-label>
+            
+            <ion-icon ></ion-icon>
+           </ion-item>
+         
+         
+        </ion-list>
+         
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+  </ion-app>
+  
+</ion-content>

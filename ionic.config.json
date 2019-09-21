@@ -1,5 +1,7 @@
 {
   "name": "edutalk",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "396035353053",
+    "firebase_url": "https://edutalk-ff881.firebaseio.com",
+    "project_id": "edutalk-ff881",
+    "storage_bucket": "edutalk-ff881.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396035353053:android:b7f5d95730fa0ba6e02e34",
+        "android_client_info": {
+          "package_name": "edutalk.prueleo.uz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396035353053-pepgmmj2q3mvpebd9h2igs1i5qivtsup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcIEq8gCUExnx8lkFa8nxSMUwfUo514zE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396035353053-pepgmmj2q3mvpebd9h2igs1i5qivtsup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

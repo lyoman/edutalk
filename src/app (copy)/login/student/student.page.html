@@ -1,0 +1,64 @@
+<ion-header>
+    <!-- <ion-navbar> -->
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="start-page"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="title" style="margin-right:50px;">Student Login</ion-title>
+    </ion-toolbar>
+    <!-- </ion-navbar> -->
+</ion-header>
+
+
+<ion-content padding class="animated fadeIn login auth-page">
+    <div class="login-content">
+
+        <!-- Logo -->
+        <div padding-horizontal text-center class="animated fadeInDown">
+            <!-- <div class="logo"></div> -->
+            <div>
+                <ion-thumbnail class="you">
+  <img src="../../assets/images\EduTalk-Logo.png" width="320"><hr><br>
+                    
+                </ion-thumbnail>
+            <!-- </div>
+            <h2 color="medium" ion-text class="text-warning">
+                <strong>EduTalk</strong>
+            </h2> -->
+        </div>
+
+
+
+        <form class="list-form">
+
+            <ion-item>
+                <ion-label position="floating" style="color: #2f315a;">
+                    <ion-icon name="users" item-start class="text-primary"></ion-icon>
+                    Email Address
+                </ion-label>
+                <ion-input type="text"  name="username"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating" style="color: #2f315a;">
+                  <ion-icon name="" item-start class="text-primary"></ion-icon>
+                    Password
+                </ion-label>
+                <ion-input type="password"  name="password"></ion-input>
+            </ion-item>
+
+        </form>
+        <p text-right>
+            <ion-text text-right color="primary" tappable end>
+                <strong>Forgot Password?</strong>
+            </ion-text>
+        </p>
+
+        <div margin-top> 
+            <ion-button icon-start expand="block" color="primary" tappable (click)="login()">
+                <ion-icon name="log-in"></ion-icon>
+                Login
+            </ion-button>
+            </div>
+            
+

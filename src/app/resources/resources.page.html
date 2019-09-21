@@ -1,0 +1,86 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Resources</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content> -->
+
+<ion-header>
+  <!-- <ion-toolbar>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar> -->
+  
+    <ion-toolbar color="primary">
+        <!-- <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons> -->
+        <ion-buttons slot="start">
+            <ion-menu-button autoHide="false"></ion-menu-button>
+        </ion-buttons>
+        <ion-title style="margin-right:50px;" class="title" text-center>
+          Resources
+        </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+      <!-- <img src="../../assets/images/EduTalk-Logo.png"> 
+    -->
+  
+    <!-- <hr> -->
+  
+  
+    <ion-grid>
+        <ion-row>
+            <ion-col size="6">
+                <div>
+                    <ion-card text-center padding color="light" (click)="audios()">
+                        <img src="../../assets/resouicon/png/006-headphone-symbol.png">
+                        <h3>Audios</h3>
+                    </ion-card>
+                </div>
+                <hr>
+  
+               
+                <ion-card padding color="light" (click)="gallery()">
+                    <img src="../../assets/resouicon/png/011-pictures.png">
+                    <h3>Gallery</h3>
+                </ion-card>
+                <hr>
+  
+  
+  
+  
+            </ion-col>
+            <ion-col size="6">
+  
+                <ion-card padding color="light" (click)="document()">
+              <img src="../../assets/resouicon/png/015-document-1.png">
+                <h3>Documents</h3>
+               
+                                      </ion-card>
+                <hr>
+  
+                <ion-card padding color="light" (click)="contact()">
+                    <img src="../../assets/my-icons-collection (4)/png/026-phone-book.png">
+                    <h3>Contact</h3>
+                </ion-card>
+                <hr>
+  
+                <ion-card padding color="light" (click)="camera()">
+                    <img src="../../assets/resouicon/png/013-instagram-logo.png">
+                    <h3>Camera</h3>
+                </ion-card>
+                <hr>
+  
+               
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+  
+  
+  
+  </ion-content>

@@ -142,7 +142,7 @@ export class RegisterPage implements OnInit {
                     localStorage.setItem('city', JSON.stringify(this.city));
                     localStorage.setItem('role', JSON.stringify(this.role));
 
-                    this.navCtrl.navigateRoot('login');
+                    this.navCtrl.navigateRoot('/' + this.role);
 
                   }).catch(error => {
                     // loader.dismiss();

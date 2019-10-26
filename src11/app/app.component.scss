@@ -1,0 +1,76 @@
+// http://ionicframework.com/docs/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.menu-icon {
+    font-size: 40px;
+}
+
+ion-card img {
+    display: block;
+    width: 60%;
+}
+
+// ion-navbar {
+//     background-color: #00ACEE;
+// }
+.title {
+    font-size: 21px;
+    text-align: center;
+}
+
+.custom-avatar {
+    height: 30vw;
+    width: 30vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ion-header ion-icon.back-button-icon.icon {
+    color: aliceblue;
+}
+
+// ion-icon {   
+//     color: #0000ff;
+// }
+ion-menu-button {
+    color: aliceblue;
+    font-size: 30px;
+}
+
+// http://ionicframework.com/docs/theming/
+// App Shared Imports
+// --------------------------------------------------
+// global styles
+.md,
+.ios,
+.wp {
+    .custom-alertDanger {
+        background-color: rgb(9, 246, 64) !important;
+        background: rgb(6, 156, 36) !important;
+        color: rgb(0, 255, 21) !important;
+        $alert-md-background-color: rgb(7, 245, 34);
+        $alert-ios-background: rgb(16, 241, 61);
+    }
+}
+
+ion-content {
+    --background: none;
+    background-image: url('../assets/images/download.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

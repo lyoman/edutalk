@@ -1,0 +1,57 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title text-center>Notice Details</ion-title>
+        <ion-buttons slot="end">
+            <ion-button (click)='closeModal()' color='light'>Close</ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-list>
+        <ion-card>
+            <ion-card-subtitle text-center>
+                <h1>{{ notice.title }}</h1>
+            </ion-card-subtitle>
+            <ion-card-content>
+
+                <ion-row>
+                    <ion-col size="4">
+                        <h2>Posted on</h2>
+
+                    </ion-col>
+                    <ion-col size="8">
+                        <h2>: {{ notice.createdDate }}</h2>
+                    </ion-col>
+                </ion-row>
+
+
+                <ion-grid>
+
+                    <ion-row>
+                        <ion-col size="4">
+                            <h2>Category</h2>
+
+                        </ion-col>
+                        <ion-col size="8">
+                            <h2>: {{ notice.category }}</h2>
+                        </ion-col>
+                    </ion-row>
+
+
+                    <ion-row>
+                        <ion-col size="4">
+                            <h2>Description</h2>
+
+                        </ion-col>
+                        <ion-col size="8">
+                            <h2>: {{ notice.description }}</h2>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+    </ion-list>
+
+</ion-content>

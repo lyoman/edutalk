@@ -1,0 +1,69 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Parent</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+
+<ion-header>
+    <!-- <ion-navbar> -->
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="welcome"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="title" style="margin-right:50px;">EduTalk</ion-title>
+    </ion-toolbar>
+    <!-- </ion-navbar> -->
+</ion-header>
+
+
+<ion-content padding class="animated fadeIn login auth-page">
+    <div class="login-content">
+
+        <!-- Logo -->
+        <div padding-horizontal text-center class="animated fadeInDown">
+            <!-- <div class="logo"></div> -->
+            <div>
+                <ion-thumbnail class="you">
+                    <img src="../../assets/images\EduTalk-Logo.png" width="320">
+                    <hr><br>
+                </ion-thumbnail>
+                <!-- </div>
+            <h2 ion-text class="text-warning">
+                <strong>EduTalk</strong>
+            </h2> -->
+            </div>
+
+            <ion-item>
+                <ion-label position="floating" style="color: #0000ff;">
+                    <ion-icon name="person" item-start class="text-primary"></ion-icon>
+                    Email Address
+                </ion-label>
+                <ion-input type="text" [(ngModel)]='email' name="username"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating" style="color:#0000ff;">
+                    <ion-icon name="lock" item-start class="text-primary"></ion-icon>
+                    Password
+                </ion-label>
+                <ion-input type="password" [(ngModel)]='password' name="password"></ion-input>
+            </ion-item>
+
+
+            <p text-right>
+                <ion-text text-right color="text-warning" tappable end>
+                    <strong>Forgot Password?</strong>
+                </ion-text>
+            </p>
+
+            <div padding>
+                <ion-button expand="block" type='submit' class="oj-blue-button" margin-top (click)="loginUser()">Login</ion-button>
+                <ion-button expand="block" fill="clear" color="dark" margin-top><strong>OR</strong></ion-button>
+                <ion-button expand="block" fill="outline" margin-top (click)="goToRegisterPage()"><strong>Register</strong></ion-button>
+                <ion-button expand="block" fill="outline" margin-top (click)="forgotPassword()"><strong>I forgot my password</strong></ion-button>
+            </div>
+        </div>
+    </div>
+
+</ion-content>

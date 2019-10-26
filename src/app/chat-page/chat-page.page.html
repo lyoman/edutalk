@@ -1,0 +1,47 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <!-- <ion-menu-button autoHide="false"></ion-menu-button> -->
+            <ion-back-button color="light" defaultHref="tebs"></ion-back-button>
+        </ion-buttons>
+        <ion-title style="margin-right:50px;" class="title" text-center>
+            EduTalk | Chat
+        </ion-title>
+
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding>
+    <ion-grid>
+        <ion-row *ngFor="let message of messages" class="message other-message ">
+            <ion-col size="9" *ngIf="currentUser !== message.user">
+                <b>{{message.user}}</b><br>
+                <span>{{message.msg}}</span>
+                <div class="time" text-right><br> {{message.createdAt | date:'short'}}</div>
+            </ion-col>
+
+            <ion-col offset="3" size="9" *ngIf="currentUser === message.user" class="message my-message ">
+                <b>{{message.user}}</b><br>
+                <span>{{message.msg}}</span>
+                <div class="time" text-right><br> {{message.createdAt | date:'short'}}</div>
+            </ion-col>
+
+        </ion-row>
+    </ion-grid>
+</ion-content>
+
+<ion-footer padding>
+    <ion-toolbar color="light">
+        <ion-row align-items-center no-padding>
+            <ion-col size="10">
+                <textarea autosize maxRows="3" [(ngModel)]="newMsg" class="message-input"></textarea>
+            </ion-col>
+            <ion-col size="2">
+                <ion-button expand="block" fill="clear" color="primary" [disabled]="newMsg === ''" class="msg-btn" (click)="sendMessage()">
+                    <ion-icon name="ios-send" slot="icon-only"></ion-icon>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
+</ion-footer>

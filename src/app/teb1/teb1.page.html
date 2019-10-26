@@ -1,0 +1,73 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button autoHide="false"></ion-menu-button>
+        </ion-buttons>
+        <ion-title style="margin-right:50px;" class="title" text-center>
+            EduTalk | {{ username }}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div text-center>
+        <img src="../assets/images/EduTalk-Logo.png" width="320" style="height: auto;width: 250px;">
+        <hr>
+    </div>
+
+    <!-- <h1 style="color: #2A1770;text-align: center;">Latest news</h1> -->
+
+    <ion-grid no-padding>
+        <ion-row>
+            <ion-col size="6" no-padding>
+
+                <ion-card padding (click)="notice();">
+                    <img src="../../assets/icons/039-information.png">
+                    <h3>notices</h3>
+                </ion-card>
+                <hr>
+
+                <ion-card padding (click)="resources();">
+                    <img src="../../assets/icons/002-folder.png">
+                    <h3>resources</h3>
+                </ion-card>
+                <hr>
+
+                <ion-card padding (click)="profile();">
+                    <img src="../../assets/icons/046-user-1.png">
+                    <h3>profile</h3>
+                </ion-card>
+                <hr>
+
+            </ion-col>
+
+            <ion-col size="6" no-padding>
+
+                <ion-card padding (click)="chat();">
+                    <img src="../../assets/icons/045-users-group.png">
+                    <h3>chat</h3>
+                </ion-card>
+                <hr>
+
+                <ion-card padding (click)="progress();">
+                    <img src="../../assets/icons/004-report.png">
+                    <h3>progress</h3>
+                </ion-card>
+                <hr>
+
+                <ion-card class="special" (click)="logout();" text-center padding>
+                    <img src="../../assets/icons/031-login.png">
+                    <h3>log out</h3>
+                </ion-card>
+
+                <hr>
+
+            </ion-col>
+
+        </ion-row>
+    </ion-grid>
+
+
+
+</ion-content>

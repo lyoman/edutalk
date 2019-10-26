@@ -1,0 +1,71 @@
+<ion-header>
+  <!-- <ion-toolbar>
+    <ion-title>Noticeboard</ion-title>
+  </ion-toolbar> -->
+
+  <ion-toolbar color="primary">
+        <!-- <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+            </ion-buttons> -->
+          
+      <ion-buttons slot="start">
+          <ion-menu-button autoHide="false"></ion-menu-button>
+      </ion-buttons>
+      <ion-title style="margin-right:50px;" class="title" text-center>
+         Noticeboard
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- <img src="../../assets/images/EduTalk-Logo.png "> -->
+
+ 
+
+  <!-- <hr> -->
+
+
+  <ion-grid>
+      <ion-row>
+          <ion-col size="6">
+              <div>
+                  <ion-card text-center padding  color="light" (click)="campusnews()">
+                      <img src="../../assets/my-icons-collection (4)/png/003-newspaper.png">
+                      <h3>Campus News</h3>
+                  </ion-card>
+              </div>
+              <hr>
+
+             
+              <ion-card padding  color="light" (click)="events()">
+                  <img src="../../assets/my-icons-collection (4)/png/018-calendar.png">
+                  <h3>Events</h3>
+              </ion-card>
+              <hr>
+
+
+
+
+          </ion-col>
+          <ion-col size="6">
+
+              <ion-card padding  color="light" (click)="classupdates()">
+            <img src="../../assets/my-icons-collection (4)/png/017-classroom-1.png">
+                  <h3>Class Updates</h3>
+              </ion-card>
+              <hr>
+
+              <ion-card padding color="light" (click)="sports()">
+                  <img src="../../assets/my-icons-collection (4)/png/021-football.png">
+                  <h3>Sports</h3>
+              </ion-card>
+              <hr>
+
+             
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+
+
+
+</ion-content>

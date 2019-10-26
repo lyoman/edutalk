@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-title color="light" >EduTalk</ion-title>
+    <br>
+    <br> -->
+
+    <ion-segment scrollable [(ngModel)]="page" color="light"><h5></h5>
+    <ion-segment-button value="chat" (click)="selectedTab(0)">
+        <ion-label>Chats</ion-label>
+      <ion-icon name="chatboxes"></ion-icon> 
+         </ion-segment-button>
+
+
+    <ion-segment-button value="contact" (click)="selectedTab(1)">
+        <ion-label>Groups</ion-label>
+      <ion-icon name="contact"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="call" (click)="selectedTab(2)">
+        <ion-label>Calls</ion-label>
+        <ion-icon name="call"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+
+  <ion-slides #IonSlides>
+    <ion-grid>
+      <ion-row *ngFor="let message of messages">
+        <ion-col size-12>
+          <b>{{message.user}}</b>
+          <span>{{}}
+        </ion-col>
+      </ion-row>
+      <ion-slide>
+        <h1></h1>
+
+      </ion-slide>
+
+      <ion-slide>
+          <h1></h1>
+        </ion-slide>
+    
+        <ion-slide>
+            <h1></h1>
+        </ion-slide>
+      
+  </ion-slides>
+
+</ion-content>

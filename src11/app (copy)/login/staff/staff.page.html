@@ -1,0 +1,115 @@
+<!-- <ion-header>
+    <ion-toolbar>
+      <ion-title>Staff</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+  
+  
+<ion-header>
+    <!-- <ion-navbar> -->
+    <!-- <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="welcome"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="title" style="margin-right:50px;">EduTalk</ion-title>
+    </ion-toolbar>
+    </ion-navbar> -->
+   <!-- Logo -->
+   <div padding-horizontal text-center class="animated fadeInDown">
+        <!-- <div class="logo"></div> -->
+        <div>
+            <ion-thumbnail class="you">
+<img src="../../assets/images\EduTalk-Logo.png" width="320"><hr><br>
+                
+            </ion-thumbnail>
+     </div>
+</ion-header>
+
+
+<ion-content padding class="animated fadeIn login auth-page">
+    <div class="login-content">
+
+        <!-- Logo -->
+        <div padding-horizontal text-center class="animated fadeInDown">
+            <!-- <div class="logo"></div> -->
+            <div>
+                <ion-thumbnail class="you">
+  <img src="../../assets/images\EduTalk-Logo.png" width="320"><hr><br>
+
+                 </ion-thumbnail>
+            </div>
+            <h2 ion-text class="text-warning">
+                <strong>EduTalk</strong>
+            </h2>
+        </div>
+
+
+
+        <form class="list-form">
+
+            <ion-item>
+                <ion-label position="floating" style="color: #0000ff;">
+                    <ion-icon name="person" item-start class="text-primary"></ion-icon>
+                    Email Address
+                </ion-label>
+                <ion-input type="text"  name="username"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating" style="color:#0000ff;">
+                    <ion-icon name="lock" item-start class="text-primary"></ion-icon>
+                    Password
+                </ion-label>
+                <ion-input type="password"  name="password"></ion-input>
+            </ion-item>
+
+        </form>
+        <p text-right>
+            <ion-text text-right color="text-warning" tappable end>
+                <strong>Forgot Password?</strong>
+            </ion-text>
+        </p>
+
+        <div margin-top>
+            <ion-button icon-start expand="block" color="primary" tappable (click)="login()">
+                <ion-icon name="log-in"></ion-icon>
+                Login
+            </ion-button>
+            </div>
+            
+      <!--      <p>
+                <ion-text text-center color="secondary">
+                    Or Sign in with:
+               </ion-text>
+            </p>
+
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-4>
+                        <ion-button icon-only expand="block" class="btn-facebook">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+
+                    <ion-col col-4>
+                        <ion-button icon-only expand="block" class="btn-twitter">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+
+                    <ion-col col-4>
+                        <ion-button icon-only expand="block" class="btn-gplus" style="--background: #E04006;">
+                            <ion-icon name="logo-googleplus"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid> 
+
+        </div>
+
+        <!-- Other links 
+        <div text-center margin-top>
+            <span tappable (click)="register()">
+                    <ion-text color="secondary">Guest? <strong>Click here</strong></ion-text>
+                </span>
+            </div> -->

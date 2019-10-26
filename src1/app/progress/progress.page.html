@@ -1,0 +1,41 @@
+<ion-header>
+  <!-- <ion-toolbar>
+    <ion-title>Progress</ion-title>
+  </ion-toolbar> -->
+
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-menu-button autoHide="false"></ion-menu-button>
+      </ion-buttons>
+      <ion-title style="margin-right:50px;" class="title" text-center>
+     | Progress Report
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- <img src="../../assets/images/EduTalk-Logo.png"> -->
+    <!-- <ion-item [routerLink]="['/profile']"> -->
+         <!-- <hr> -->
+
+
+  <ion-grid>
+      <ion-row>
+          <ion-col size="6">
+              <div>
+                  <ion-card text-center padding color="light" (click)="subjects()">
+                      <img src="../../assets/icons/028-clipboard.png">
+                      <h3>Subjects</h3>
+                  </ion-card>
+              </div>
+              <hr>
+
+             
+              
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+
+
+
+</ion-content>
